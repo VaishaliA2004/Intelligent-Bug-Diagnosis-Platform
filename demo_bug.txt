@@ -1,0 +1,13 @@
+Title: Payment Failure During Checkout
+Priority: High
+Exception: NullPointerException
+File: PaymentService.java
+Line: 142
+
+Description:
+Customer is unable to complete payment during checkout. The application crashes while processing the payment request.
+
+Stack Trace:
+java.lang.NullPointerException
+at com.shop.payment.PaymentService.processPayment(PaymentService.java:142)
+at com.shop.checkout.CheckoutService.checkout(CheckoutService.java:87)

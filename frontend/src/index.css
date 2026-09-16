@@ -1,0 +1,12 @@
+html {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}

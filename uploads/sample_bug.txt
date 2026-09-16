@@ -1,0 +1,14 @@
+Title: Payment Failure During Checkout
+
+Priority: High
+
+Description:
+Users are unable to complete payment during checkout.
+
+Error:
+NullPointerException at PaymentService.java:142
+
+Stack Trace:
+at com.example.PaymentService.processPayment(PaymentService.java:142)
+at com.example.CheckoutController.checkout(CheckoutController.java:87)
+at com.example.OrderService.placeOrder(OrderService.java:54)

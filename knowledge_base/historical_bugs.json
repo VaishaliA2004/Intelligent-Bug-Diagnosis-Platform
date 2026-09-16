@@ -1,0 +1,47 @@
+[
+    {
+        "id": "BUG-001",
+        "title": "Payment NullPointerException",
+        "component": "Payment / Checkout",
+        "exception": "NullPointerException",
+        "description": "Payment processing fails when the payment object is not initialized before checkout.",
+        "root_cause": "The payment object is null when the processPayment method attempts to access it.",
+        "resolution": "Initialize the payment object and validate it before processing the transaction."
+    },
+    {
+        "id": "BUG-002",
+        "title": "Login NullPointerException",
+        "component": "Authentication / Login",
+        "exception": "NullPointerException",
+        "description": "Login fails when the user session object is missing.",
+        "root_cause": "The application accesses the user session without checking whether the session exists.",
+        "resolution": "Validate the session object before accessing user information."
+    },
+    {
+        "id": "BUG-003",
+        "title": "Order Processing NullPointerException",
+        "component": "Order Management",
+        "exception": "NullPointerException",
+        "description": "Order creation fails because the customer object is null.",
+        "root_cause": "The customer object is not initialized before it is used during order creation.",
+        "resolution": "Validate the customer object before creating the order."
+    },
+    {
+        "id": "BUG-004",
+        "title": "Database Connection Failure",
+        "component": "Database",
+        "exception": "SQLException",
+        "description": "Application fails while attempting to retrieve data from the database.",
+        "root_cause": "The database connection is unavailable or incorrectly configured.",
+        "resolution": "Validate database configuration and connection availability before executing queries."
+    },
+    {
+        "id": "BUG-005",
+        "title": "Payment Timeout",
+        "component": "Payment / Checkout",
+        "exception": "TimeoutException",
+        "description": "Payment processing takes too long and the transaction times out.",
+        "root_cause": "The payment service does not respond within the configured timeout period.",
+        "resolution": "Increase the appropriate timeout threshold and investigate slow payment-service responses."
+    }
+]

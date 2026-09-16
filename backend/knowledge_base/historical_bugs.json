@@ -1,0 +1,72 @@
+[
+    {
+        "bug_id": "BUG-001",
+        "title": "Payment Failure During Checkout",
+        "exception": "NullPointerException",
+        "component": "Payment / Checkout",
+        "root_cause": "Payment object was null before payment processing.",
+        "resolution": "Validate the payment object before accessing payment details.",
+        "keywords": [
+            "payment",
+            "checkout",
+            "nullpointerexception",
+            "payment object"
+        ]
+    },
+    {
+        "bug_id": "BUG-002",
+        "title": "Login Application Failure",
+        "exception": "NullPointerException",
+        "component": "Authentication / Login",
+        "root_cause": "User session object was null during authentication.",
+        "resolution": "Check whether the user session exists before accessing session attributes.",
+        "keywords": [
+            "login",
+            "authentication",
+            "nullpointerexception",
+            "session"
+        ]
+    },
+    {
+        "bug_id": "BUG-003",
+        "title": "Database Connection Failure",
+        "exception": "SQLException",
+        "component": "Database",
+        "root_cause": "Database connection was unavailable when the query was executed.",
+        "resolution": "Verify database connectivity and handle connection failures before executing queries.",
+        "keywords": [
+            "database",
+            "sql",
+            "connection",
+            "sqlexception"
+        ]
+    },
+    {
+        "bug_id": "BUG-004",
+        "title": "Order Processing Failure",
+        "exception": "NullPointerException",
+        "component": "Order Management",
+        "root_cause": "Order object was null during order processing.",
+        "resolution": "Validate the order object before processing order information.",
+        "keywords": [
+            "order",
+            "processing",
+            "nullpointerexception",
+            "order object"
+        ]
+    },
+    {
+        "bug_id": "BUG-005",
+        "title": "Payment Gateway Timeout",
+        "exception": "TimeoutException",
+        "component": "Payment Gateway",
+        "root_cause": "The external payment gateway did not respond within the configured timeout period.",
+        "resolution": "Increase timeout handling and implement retry logic for temporary gateway failures.",
+        "keywords": [
+            "payment",
+            "gateway",
+            "timeout",
+            "retry"
+        ]
+    }
+]
